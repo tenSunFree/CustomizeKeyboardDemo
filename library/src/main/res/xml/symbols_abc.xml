@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Keyboard: 存储键盘以及按键相关信息
+horizontalGap: 按键之间默认的水平间距
+verticalGap: 按键之间默认的垂直间距
+keyHeight: 按键的默认高度，以像素或显示高度的百分比表示
+keyWidth: 按键的默认宽度，以像素或显示宽度的百分比表示
+-->
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0.9%p"
+    android:keyHeight="4.8%p"
+    android:keyWidth="5.625%p"
+    android:verticalGap="1.1625%p">
+
+    <!--
+    Row: 为包含按键的容器
+    Key: 用于描述键盘中单个键的位置和特性
+    codes: 该键输出的unicode值
+    isRepeatable: 这个属性如果设置为true, 那么当长按该键时就会重复接受到该键上的动作, 在删除键键和空格键上通常设为true
+    -->
+    <Row>
+        <Key
+            android:codes="113"
+            android:horizontalGap="0.3%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="q"/>
+        <Key
+            android:codes="119"
+            android:keyLabel="w"/>
+        <Key
+            android:codes="101"
+            android:keyLabel="e"/>
+        <Key
+            android:codes="114"
+            android:keyLabel="r"/>
+        <Key
+            android:codes="116"
+            android:keyLabel="t"/>
+        <Key
+            android:codes="121"
+            android:keyLabel="y"/>
+        <Key
+            android:codes="117"
+            android:keyLabel="u"/>
+        <Key
+            android:codes="105"
+            android:keyLabel="i"/>
+        <Key
+            android:codes="111"
+            android:keyLabel="o"/>
+        <Key
+            android:codes="112"
+            android:keyLabel="p"/>
+
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="97"
+            android:horizontalGap="3.825%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="a"/>
+        <Key
+            android:codes="115"
+            android:keyLabel="s"/>
+        <Key
+            android:codes="100"
+            android:keyLabel="d"/>
+        <Key
+            android:codes="102"
+            android:keyLabel="f"/>
+        <Key
+            android:codes="103"
+            android:keyLabel="g"/>
+        <Key
+            android:codes="104"
+            android:keyLabel="h"/>
+        <Key
+            android:codes="106"
+            android:keyLabel="j"/>
+        <Key
+            android:codes="107"
+            android:keyLabel="k"/>
+        <Key
+            android:codes="108"
+            android:keyEdgeFlags="right"
+            android:keyLabel="l"/>
+    </Row>
+
+    <!--
+    isModifier: 指定按键是否为功能键(modifier key), 例如Alt或Shift, 取值为true或false
+    isSticky: 指定按键是否为sticky的, 例如Shift大小写切换按键, 具有两种状态, 按下状态和正常状态, 取值为true或false。
+    -->
+    <Row>
+        <Key
+            android:codes="-1"
+            android:horizontalGap="0.3%p"
+            android:isModifier="true"
+            android:isSticky="true"
+            android:keyEdgeFlags="left"/>
+        <Key
+            android:codes="122"
+            android:horizontalGap="4.425%p"
+            android:keyLabel="z"/>
+        <Key
+            android:codes="120"
+            android:keyLabel="x"/>
+        <Key
+            android:codes="99"
+            android:keyLabel="c"/>
+        <Key
+            android:codes="118"
+            android:keyLabel="v"/>
+        <Key
+            android:codes="98"
+            android:keyLabel="b"/>
+        <Key
+            android:codes="110"
+            android:keyLabel="n"/>
+        <Key
+            android:codes="109"
+            android:keyLabel="m"/>
+        <!-- . -->
+        <Key
+            android:keyEdgeFlags="right"
+            android:keyLabel="@string/char_46"
+            android:keyOutputText="@string/char_46"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key
+            android:codes="123123"
+            android:horizontalGap="0.3%p"
+            android:keyLabel="123"
+            android:keyWidth="17.25%p"/>
+        <Key
+            android:codes="32"
+            android:keyEdgeFlags="right"
+            android:keyWidth="35.25%p"/>
+        <!--
+        <Key
+            android:codes="789789"
+            android:keyWidth="23.000004%p"/>
+            -->
+    </Row>
+</Keyboard>

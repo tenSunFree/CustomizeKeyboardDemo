@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/keyboard_abc_123_press"/>
+    <item
+        android:bottom="6dp"
+        android:drawable="@mipmap/enter"
+        android:left="80dp"
+        android:right="80dp"
+        android:top="6dp"/>
+</layer-list>

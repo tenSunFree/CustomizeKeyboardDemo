@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/keyboard_abc_space_press"/>
+    <item
+        android:bottom="6dp"
+        android:gravity="center"
+        android:drawable="@mipmap/space2"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="6dp"/>
+</layer-list>

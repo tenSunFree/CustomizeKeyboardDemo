@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Keyboard: 存储键盘以及按键相关信息
+horizontalGap: 按键之间默认的水平间距
+verticalGap: 按键之间默认的垂直间距
+keyHeight: 按键的默认高度，以像素或显示高度的百分比表示
+keyWidth: 按键的默认宽度，以像素或显示宽度的百分比表示
+-->
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="0.9%p"
+    android:keyHeight="4.8%p"
+    android:keyWidth="5.625%p"
+    android:verticalGap="1.1625%p">
+
+    <Row>
+        <!-- - -->
+        <Key
+            android:horizontalGap="0.3%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/char_45"
+            android:keyOutputText="@string/char_45"/>
+        <!-- + -->
+        <Key
+            android:isModifier="true"
+            android:keyLabel="@string/char_43"
+            android:keyOutputText="@string/char_43"/>
+        <!-- , -->
+        <Key
+            android:keyLabel="@string/char_44"
+            android:keyOutputText="@string/char_44"/>
+        <Key
+            android:codes="49"
+            android:keyLabel="1"/>
+        <Key
+            android:codes="50"
+            android:keyLabel="2"/>
+        <Key
+            android:codes="51"
+            android:keyLabel="3"/>
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"
+            android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <!-- @ -->
+        <Key
+            android:horizontalGap="0.3%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/char_64"
+            android:keyOutputText="@string/char_64"/>
+        <!-- . -->
+        <Key
+            android:keyLabel="@string/char_46"
+            android:keyOutputText="@string/char_46"/>
+        <!-- ; -->
+        <Key
+            android:keyLabel="@string/char_59"
+            android:keyOutputText="@string/char_59"/>
+        <Key
+            android:codes="52"
+            android:keyLabel="4"/>
+        <Key
+            android:codes="53"
+            android:keyLabel="5"/>
+        <Key
+            android:codes="54"
+            android:keyLabel="6"/>
+    </Row>
+
+    <Row>
+        <!-- ( -->
+        <Key
+            android:horizontalGap="0.3%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="@string/char_40"
+            android:keyOutputText="@string/char_40"/>
+        <!-- ) -->
+        <Key
+            android:keyLabel="@string/char_41"
+            android:keyOutputText="@string/char_41"/>
+        <Key
+            android:codes="78"
+            android:keyLabel="N"/>
+        <Key
+            android:codes="55"
+            android:keyLabel="7"/>
+        <Key
+            android:codes="56"
+            android:keyLabel="8"/>
+        <Key
+            android:codes="57"
+            android:keyLabel="9"/>
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="741741"
+            android:horizontalGap="0.3%p"
+            android:keyEdgeFlags="left"
+            android:keyLabel="ABC"
+            android:keyWidth="18.70%p"/>
+        <!-- * -->
+        <Key
+            android:keyLabel="@string/char_42"
+            android:keyOutputText="@string/char_42"/>
+        <Key
+            android:codes="48"
+            android:keyLabel="0"/>
+        <!-- # -->
+        <Key
+            android:keyLabel="@string/char_35"
+            android:keyOutputText="@string/char_35"/>
+    </Row>
+</Keyboard>
